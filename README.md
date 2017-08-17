@@ -70,11 +70,15 @@ Please have the details of these available but do not have any configuration pre
 ### Running the SDK Sample Setup Script
 Before executing the samples we'll need to setup the vSphere test environment using one of the sample scripts. Before we run the script we'll need to edit one of the files and provide IP addresses for the various machine instances.
 
-First, from the command line change to the SDK ./bin folder.
+First, set PYTHONPATH to use SDK helper methods  
 
-```cmd
-$ cd /path/to/vsphere-automation-sdk-python-samples/bin
-```
+* Linux/Mac:
+
+    export PYTHONPATH=${PWD}:$PYTHONPATH
+
+* Windows:
+
+    set PYTHONPATH=%cd%;%PYTHONPATH%
 
 Next, using a text editor open ../samples/vsphere/vcenter/setup/testbed.py and edit the following settings replace everything in < > brackets with your environment information. Leave the rest of the settings in this file at their default values.
 
@@ -114,13 +118,13 @@ This script will perform the following:
 **To view the available command-line options:**
 
 ```cmd
-$ ./run_sample.sh ../samples/vsphere/vcenter/setup/main.py -h
+$ python ../samples/vsphere/vcenter/setup/main.py -h
 ```
 
 **To run the setup script:**
 
 ```cmd
-$ ./run_sample.sh ../samples/vsphere/vcenter/setup/main.py -sv
+$ python ../samples/vsphere/vcenter/setup/main.py -sv
 ```
 
 After completion you will see from the output and also the vSphere Webclient that the environment has now been fully setup and is ready to easily run further samples.
@@ -131,7 +135,7 @@ This SDK includes a sample script which can be used to perform a number of actio
 **Run the vAPI vCenter sample suite:**
 
 ```cmd
-$ ./run_sample.sh ../samples/vsphere/vcenter/setup/main.py -riv
+$ python ../samples/vsphere/vcenter/setup/main.py -riv
 ```
 
 ## API Documentation
@@ -143,12 +147,14 @@ The API documentation can be found [here](doc/client.zip)
 
 Before you start working with this project, please read our [Developer Certificate of Origin](https://cla.vmware.com/dco). All contributions to this repository must be signed as described on that page. Your signature certifies that you wrote the patch or have the right to pass it on as an open-source patch.
 
+### Sample Template
+[Sample template](sample_template) contains boilerplate code that can be used to build a new sample.
+Please copy the file and use it as a starting point to write a new sample.
+
 ### Required Information
 The following information must be included in the README.md or in the sample docstring in case README already exists in same folder.
 * Author Name
   * This can include full name, email address or other identifiable piece of information that would allow interested parties to contact author with questions.
-* Date
-  * Date the sample was originally written
 * Minimal/High Level Description
   * What does the sample do ?
 * Any KNOWN limitations or dependencies
