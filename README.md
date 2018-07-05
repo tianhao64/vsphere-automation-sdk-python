@@ -209,7 +209,7 @@ $ python samples/vsphere/vcenter/vm/list_vms.py -v
 
 ### vSphere API Documentation
 
-* [vSphere Cloud](https://tianhao64.github.io/vsphere-automation-sdk-python/vsphere/cloud/index.html)
+* [VMware Cloud on AWS vSphere (latest version)](https://tianhao64.github.io/vsphere-automation-sdk-python/vsphere/cloud/index.html)
 * [vSphere 6.7.0](https://tianhao64.github.io/vsphere-automation-sdk-python/vsphere/6.7.0/index.html)
 * [Previous Releases](https://tianhao64.github.io/vsphere-automation-sdk-python/vsphere/)
 
@@ -220,7 +220,7 @@ $ python samples/vsphere/vcenter/vm/list_vms.py -v
 ### NSX API Documentation
 
 * [NSX Policy](https://tianhao64.github.io/vsphere-automation-sdk-python/nsx/nsx_policy/index.html)
-* [VMC App](https://tianhao64.github.io/vsphere-automation-sdk-python/nsx/vmc_app/index.html)
+* [NSX VMC App](https://tianhao64.github.io/vsphere-automation-sdk-python/nsx/vmc_app/index.html)
 
 ## Repository Administrator Resources
 
